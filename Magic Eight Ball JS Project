@@ -1,0 +1,51 @@
+//Magic Eight Ball
+//In this project I built a Magic Eight Ball using control flow in JavaScript. A user's able to input a question, then the program will output a random fortune.
+
+let username = 'Burhan';
+username ? console.log(`Hello ${username}!`) : console.log('Hello!');  //using ternary operator
+
+let userQuestion = 'How are you doing';
+console.log(`Your quesion was : ${userQuestion}`);
+
+let randomNumber = Math.floor(Math.random()*8);
+
+let eightBall = '';
+
+switch(randomNumber)
+{
+  case 0: 
+  eightBall = console.log('It is certain');
+  break;
+
+  case 1: 
+  eightBall = console.log('It is decidedly so');
+  break;
+
+  case 2: 
+  eightBall = console.log('Reply hazy try again');
+  break;
+  
+  case 3: 
+  eightBall = console.log('Cannot predict now');
+  break;
+  
+  case 4: 
+  eightBall = console.log('Do not count on it');
+  break;
+
+  case 5: 
+  eightBall = console.log('My sources say no');
+  break;
+  
+  case 6: 
+  eightBall = console.log('Outlook not so good');
+  break;
+  case 7: 
+  eightBall = console.log('It is certain');
+  break;
+
+  default : console.log('Signs point to yes');
+  break;
+}
+
+console.log(`The eight ball answered: ${randomNumber}`);
